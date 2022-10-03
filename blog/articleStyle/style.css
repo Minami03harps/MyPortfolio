@@ -1,0 +1,37 @@
+.blog-title {
+    margin-top: 100px;
+}
+.pic-title {
+    text-align: center;
+    padding: 10px 0;
+    font-weight: normal;
+    color: rgb(73, 110, 125);
+}
+.pic-title::before {
+    content: "---- ";
+    color: black
+}
+.pic-title::after{
+    content: " ----";
+    color: black;
+}
+
+.text  {
+    max-width: 700px;
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 15px;
+}
+img {
+    margin-bottom: 20px;
+    width: 55%;
+    display: flex;
+    margin: 0 auto 15px auto;
+}
+
+
+@media screen and (max-width:700px) {
+    img {
+        width: 100%;
+    }
+}

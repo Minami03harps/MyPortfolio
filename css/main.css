@@ -1,0 +1,254 @@
+/* common===================================================== */
+#works .content,
+#blog .content {
+    flex-wrap: wrap;
+}
+article {
+    width: 30%;
+    transform: translateY(30px);
+    transition: all 1s;
+}
+article.appear {
+    transform: translateY(0);
+}
+
+
+/* mainvisual=================================================- */
+#mainvisual {
+    width: 100%;
+    height: 600px;
+    color: white;
+    position: relative;
+    margin-bottom: 50px;
+}
+#mainvisual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mainvisual-title {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 200px);
+    text-align: center;
+}
+.mainvisual-title h2 {
+    margin-bottom: 5px;
+}
+.mainvisual-title p {
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.typing-box {
+    display: flex;
+}
+.typing {
+    position: relative;
+    margin-left: 10px;
+}
+
+/* 文字打ち込み時の右横にある縦線 */
+/* 打ち込み終わったら.hideで消す */
+.typing::after{
+    position: absolute;
+    right: -5px;
+    top: 15%;
+    content: "";
+    width: 1px;
+    height: 70%;
+    border-right: 1px solid rgb(8, 26, 67);
+    animation: blink 0.8s infinite ease;
+}
+.typing.hide::after {
+    display: none;
+}
+/* 縦線が点滅するanimation */
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* about =====================================================*/
+
+.my-name {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+.my-name span {
+    font-size: 0.7rem;
+    display: block;
+}
+#about .content {
+    justify-content: center;
+}
+
+#about .profileImg{
+    width: 300px;
+    height: 300px;
+    margin: auto 0;
+    opacity: 0;
+    transition: opacity 2s;
+}
+/* JS observer******/
+#about .profileImg.appear {
+    opacity: 1;
+    animation-name: imgAnimation;
+    animation-duration: 1s;
+}
+
+#about .item1 {
+    max-width: 500px;
+    margin-left: 20px;
+}
+#about dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+#about  dt {
+    width: 20%;
+    margin-bottom: 12px;
+    font-weight: bolder;
+}
+#about dd {
+    width: 80%;
+    margin-inline-start: 0;
+    margin-bottom: 12px;
+}
+
+
+/* WORKS===================================================================== */
+#works img {
+    aspect-ratio: 7/5;
+}
+#works dl {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+#works  dt {
+    width: 30%;
+    margin-bottom: 5px;
+}
+#works dt::after {
+    content: ":";
+}
+#works dd {
+    width: 70%;
+    margin-inline-start: 0;
+    margin-bottom: 5px;
+}
+
+/* BLOG================================================= */
+#blog .article-img {
+    border-radius: 3px;
+    aspect-ratio: 1/1;
+}
+#blog .article-img  img{
+    width: 100%;
+}
+
+/* CONTACT==================================================== */
+#contact .inner {
+    background-color: rgb(246, 242, 212, 0.5);
+    border-radius: 5px;
+    position: relative;
+    padding-bottom: 50px;
+}
+#contact .content {
+    width: 75%;
+    margin: auto;
+    flex-direction: column;
+}
+#contact .sec-title {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    right: 0;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+}
+.contact-btn {
+    display: block;
+    width: 60%;
+    max-width: 300px;
+    padding: 10px 0;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #5584AC;
+    color: white;
+    border: 1px solid #5584AC;
+    margin: 30px auto 20px auto;
+    transition: 0.3s;
+}
+.contact-btn:hover {
+    opacity:0.8 ;
+}
+#contact p {
+    font-size: 1rem;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+    article {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    #works .content,
+    #blog .content {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:700px) {
+    /* mainvisual================================================= */
+    
+    /* about====================================================== */
+
+    #about .content {
+        flex-direction: column;
+    }
+    #about .profileImg {
+        margin: 0 auto 15px auto;
+    }
+    #about .item1 {
+        margin-left: 0;
+        margin: 0 auto;
+    }
+    #about .my-name {
+        text-align: center;
+    }
+    #works dl {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    #works dt,
+    #works dd {
+        width: 100%;
+        margin: 0;
+    }
+    #works dd {
+        margin-bottom: 7px;
+    }
+
+}

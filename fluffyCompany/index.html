@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Fluffy Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+
+<body>
+    <header>
+        <div class="header-top">
+            <div id="sp">
+                <span class="material-symbols-outlined" id="open">menu</span>
+            </div>
+
+            <h1 class="site-title"><a href="#">Fluffy</a></h1>
+        <span class="material-symbols-outlined" id="shop-cart">shopping_cart</span>
+        </div>
+        <div class="header-bottom">
+                    <nav>
+                        <ul>
+                            <li><a href="#">マットレス</a></li>
+                            <li><a href="#">ベッドフレーム</a></li>
+                            <li><a href="#">まくら</a></li>
+                            <li><a href="#">シーツ</a></li>
+                            <li><a href="#">サイドテーブル</a></li>
+                        </ul>
+                    </nav>
+        </div>
+    </header>
+
+    <div class="overlay">
+        <span class="material-symbols-outlined" id="close">close</span>
+        <nav class="sp-navi">
+            <ul>
+                <li><a href="#">マットレス</a></li>
+                <li><a href="#">ベッドフレーム</a></li>
+                <li><a href="#">まくら</a></li>
+                <li><a href="#">シーツ</a></li>
+                <li><a href="#">サイドテーブル</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+
+    
+    <main>
+    <!-- メインビジュアル -->
+    <div id="mainvisual">
+        <div class="slider">
+            <div class="slider-img">
+                <img src="img/mainvisual1.jpg" alt="メイン画像1" class="active">
+                <img src="img/mainvisual2.jpg" alt="メイン画像2">
+            </div>
+        </div>
+
+        <div class="text">
+            <p class="main-title">30%OFF <br>SALE</p>
+            <a href="#" class="btn"><p>対象商品を見る</p></a>
+        </div>
+    </div>
+
+
+    <!-- category -->
+    <section id="category">
+        <div class="wrapper">
+            <h3 class="sec-title">Category</h3>
+            <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/produc1.jpg" alt="マットレス画像">
+                            <p>マットレス</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/produc2.jpg" alt="ベッドフレーム画像">
+                            <p>ベッドフレーム</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/produc3.jpg" alt="まくら画像">
+                            <p>まくら</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/produc4.jpg" alt="シーツ画像">
+                            <p>シーツ</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/produc5.jpg" alt="サイドテーブル画像">
+                            <p>サイドテーブル</p>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- customer review -->
+    <section id="review">
+        <h3 class="sec-title">Customer Review</h3>
+        <div class="wrapper">
+            <ul class="cursor-ul">
+                <li>
+                    <div class="content left">
+                        <img src="img/customer1.jpg" alt="カスタマー画像1" class="customer-img">
+                        <div class="text">
+                            <h4 class="text-title">まるで雲の上で寝ているようです。</h4>
+                            <p>想像以上にふかふかしていました。仰向けでもうつ伏せでも全然苦しくありません。嬉しすぎてつい眠りすぎてしまいました。</p>
+                            <p class="star"></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="content right">
+                        <div class="text">
+                            <h4 class="text-title">寝具の常識が変わりました。</h4>
+                            <p>あまり寝具にこだわってきませんでしたが、寝具を変えてからは体が軽くなり、腰痛も改善されました</p>
+                            <p class="star"></p>
+                        </div>
+                        <img src="img/customer2.jpg" alt="カスタマー画像2" class="customer-img">
+                    </div>
+                </li>
+                <li>
+                    <div class="content left">
+                        <img src="img/customer3.jpg" alt="カスタマー画像3" class="customer-img">
+                        <div class="text">
+                            <h4 class="text-title">仲間にもおすすめします。</h4>
+                            <p>寝起きがよくなりました。デザイン性も優れていて、すべての寝具を買い替えて新しくしました。<br> 体が大きい方にもぜひおすすめしたいです。</p>
+                            <p class="star"></p>
+                        </div>
+                    </div> 
+                </li>
+            </ul>
+
+            <button id="prev">&laquo;</button>
+            <button id="next">&raquo;</button>
+        </div>
+        <nav class="dots-box">
+        </nav>
+    </section>
+
+
+    <!-- concept -->
+    <section id="concept">
+        <div class="clouds">
+            <h2 class="sec-title">Our concept</h2>
+            <div class="content">
+                <div class="text">
+                    <h3 class="text-title">夜眠るのが楽しくなる寝具</h3>
+                    <p>
+                        人生の3分の1を占める睡眠時間を、お客様により良い眠りがとれるような寝具開発を探求し続けています。 <br>
+                        こだわり抜かれた機能性・デザイン性で、夜の長旅を共にする寝具を選びましょう。
+                    </p>
+                </div>
+                <div class="concept-img">
+                    <img src="img/concept.png" alt="">
+                </div>
+            </div>         
+        </div>
+    </div>
+    </section>
+    </main>
+
+<footer>
+    <p class="copyright">&copy;Fluffy Company</p>
+</footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

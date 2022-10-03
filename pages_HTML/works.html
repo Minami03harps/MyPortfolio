@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minami Oshiro/Portfolio Site</title>
+        
+        
+        <!-- css -->
+        <link rel="stylesheet" href="/css/basic.css">
+        <link rel="stylesheet" href="/css/galary.css">
+    </head>
+<body>
+    <header>
+        <h1 class="site-title"><a href="/index.html"> Minami Oshiro</a></h1>
+        <nav class="pc-menu">
+            <ul>
+                <li><a href="/index.html">Top</a></li>
+                <li><a href="/index.html#about">About</a></li>
+                <li><a href="/pages_HTML/works.html">Works</a></li>
+                <li><a href="/pages_HTML/blog.html">Blog</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="hamburger">
+            <span class="toggle-btn first open"></span>
+            <span class="toggle-btn second"></span>
+        </div>
+
+        <div class="sp-menu">
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Top</a></li>
+                    <li><a href="/index.html#about">About</a></li>
+                    <li><a href="/pages_HTML/works.html">Works</a></li>
+                    <li><a href="/pages_HTML/blog.html">Blog</a></li>
+                    <li><a href="/index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="sp-mask"></div>
+        <div class="overlay"></div>
+
+
+    </header>
+    
+
+    <main>
+        <h2 class="page-title">WORKS</h2>
+        <div id="works" class="wrapper">
+            <article id="work1">
+                    <h4 class="article-title">当ポートフォリオサイト</h4>
+                    <a href="/index.html" class="jumpTo">
+                        <img src="/img/works1.png" alt="実績サイト１">
+                    </a>
+                    <p class="langages">HTML/ css/ JavaScript</p>
+                    <p>制作期間: 2週間</p>
+                    <p class="coment">実装機能:</p>
+
+                    <p>ハンバーガーメニュー、自動文字タイピング、IntersectionObserver</p>
+                    <p class="coment">コメント:</p>
+                    <p>JavaScriptの理解を深めるためにライブラリ等は使用せず、学習したことを応用してサイトに動きをつけました。<br>
+                        サイトトップページにて、ループ処理を使用して文字を自動で打ち込んでいく仕組みが本サイトのポイントです。<br>
+                        お問合せフォームについては、PHPにてメール送信処理を実装予定です。
+                        
+                    </p>
+                    <a class="github-btn" href="https://github.com/Minami03harps">GitHubで見る</a>
+            </article>
+            <article id="work2">
+                    <h4 class="article-title">[架空]寝具サイト</h4>
+                    <a href="/fluffyCompany/" class="jumpTo">
+                        <img src="/img/work2.png" alt="実績サイト2">
+                    </a>
+                    <p class="langages">HTML/ css/ JavaScript</p>
+                    <p>制作期間: 3日</p>
+                    <p class="coment">実装機能:</p>
+
+                    <p>ハンバーガーメニュー、mainvisualのスライダー、Customer Reviewのカルーセル</p>
+                    <p class="coment">コメント:</p>
+                    <p>TOP画像を自動で表示・切り替える機能や、画面幅が700px以下になった際にcustomer reviewをスライドできるように
+                        JavaScriptで実装しました。
+                        レスポンシブでのJavaScript実装による画面崩れがありましたが、その改善策や原因を自身で仮定して考え、調べながら処理を書いたことによりレスポンシブ対応の知識が深まりました。                    
+                    </p>
+                    <a class="github-btn" href="https://github.com/Minami03harps">GitHubで見る</a>
+            </article>
+        </div>
+    </main>
+
+<footer>
+    <div class="sns">
+        <ul>
+            <li><a href="https://github.com/Minami03harps"><img src="/img/githubLogo.png" alt="github-logo"></a></li>
+            <li><a href="https://www.facebook.com/people/%E5%A4%A7%E5%9F%8E%E7%BE%8E%E5%A5%88%E5%AE%9F/100041461067527/"><img src="/img/facebookLogo.png" alt="facebook-log"></a></li>
+            <li><a href="https://vsco.co/333-minami/gallery"><img src="/img/vscoLogo.png" alt="vsco-logo"></a></li>
+        </ul>
+    </div>
+    <div class="copy-light">
+        <small>&copy;2022 Minami Oshiro Portfolio</small>
+    </div>
+</footer>
+
+    <script src="/JavaScript/main.js"></script>
+    <script src="/JavaScript/observer.js"></script>
+</body>
+</html>

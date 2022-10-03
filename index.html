@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="short icon" href="img/favicon.png">
+    <title>Minami Oshiro/Portfolio Site</title>
+    
+    
+    <!-- css -->
+    <link rel="stylesheet" href="/css/basic.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+
+<body>
+    <header>
+        <h1 class="site-title"><a href="/index.html"> Minami Oshiro</a></h1>
+        <nav class="pc-menu">
+            <ul>
+                <li><a href="index.html">Top</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="/pages_HTML/works.html">Works</a></li>
+                <li><a href="/pages_HTML/blog.html">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- ハンバーガーメニュー -->
+        <div id="hamburger">
+            <span class="toggle-btn first open"></span>
+            <span class="toggle-btn second"></span>
+        </div>
+        <div class="sp-menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Top</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="/pages_HTML/works.html">Works</a></li>
+                    <li><a href="/pages_HTML/blog.html">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="sp-mask"></div>
+        <div class="overlay"></div>
+    </header>
+
+    <main>
+        <div id="mainvisual">
+            <img src="img/mainvisual.jpg" alt="トップ画像">
+            <div class="mainvisual-title">
+                <h2>Minami Oshiro</h2>
+                <!-- JavaScriptにてタイピング処理 -->
+                <div class="typing-box">
+                    <p class="typing"></p>
+                </div>
+            </div>
+        </div>
+
+
+        <section id="about" class="wrapper">
+            <div class="inner">
+                <h2 class="sec-title">ABOUT</h2>
+                <div class="content">
+                    <img class="profileImg" src="img/profile.jpg" alt="プロフィール画像">
+                    <div class="item1">
+                        <h3 class="my-name">大城　美奈実　<span>Minami Oshiro</span></h3>
+                        <dl>
+                            <dt>生まれ</dt>
+                            <dd>1998.08.21(24)</dd>
+                            <dt>学習開始</dt>
+                            <dd>2022.02</dd>
+                            <dt>スキル</dt>
+                            <dd>HTML, CSS, JavaScript, jQuery</dd>
+                            <dt>趣味</dt>
+                            <dd>筋トレ, 英語学習, 旅</dd> 
+                        </dl>
+                        <p>沖縄生まれ沖縄育ち。高校卒業後、幼少期からの夢であった警察官として地元沖縄で勤務する。<br>
+                            退職後は英語及びプログラミング学習を独学で始め、挫折を繰り返しながら学習を続けている。
+                            現在は新たにPHPやGit等の学習に取り組んでいる。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="works" class="wrapper">
+            <div class="inner">
+                <h2 class="sec-title">WORKS</h2>
+                <div class="content">
+                    <article class="work1">
+                        <h4 class="article-title">当ポートフォリオサイト</h4>
+                        <div class="article-img">
+                            <a href="/pages_HTML/works.html"><img src="/img/works1.png" alt="実績サイト１"></a>
+                        </div>
+                            <dl class="work-info">
+                                <dt>使用技術</dt>
+                                <dd>HTML/ CSS/ JavaScript</dd>
+                                <dt>制作期間</dt>
+                                <dd>2週間</dd>
+                                <dt>コメント</dt>
+                                <dd>学習したJavaScrictの機能を使用し、サイトに動きをつけました。</dd>
+                            </dl>
+                    </article>
+                    <!-- /work1 -->
+    
+                    <article class="work2">
+                        <h4 class="article-title">[架空]寝具サイト</h4>
+                        <div class="article-img">
+                            <a href="/pages_HTML/works.html#work2"><img src="/img/work2.png" alt="実績サイト2"></a>
+                        </div>
+                            <dl class="work-info">
+                                <dt>使用技術</dt>
+                                <dd>HTML/ CSS/ JavaScript</dd>
+                                <dt>制作期間</dt>
+                                <dd>3日</dd>
+                                <dt>コメント</dt>
+                                <dd>スライドやカルーセル機能を実装しています。</dd>
+                            </dl>
+                    </article>
+                    <!-- /work2 -->
+    
+                    <article class="work3">
+                        <h4 class="article-title">Comming Soon!</h4>
+                        <div class="article-img">
+                            <a href="#"><img src="/img/plane.jpg" alt="実績サイト１"></a>
+                        </div>
+                            <dl class="work-info">
+                                <dt>使用技術</dt>
+                                <dd>HTML/ CSS/ JavaScript/ PHP</dd>
+                                <dt>制作期間</dt>
+                                <dd>作成中</dd>
+                                <dt>コメント</dt>
+                                <dd>PHPを実装したサイトを制作予定です。</dd>
+                            </dl>
+                    </article>
+                    <!-- /work3 -->
+
+                </div>
+                <!-- /content -->
+                <a class="detail-btn" href="/pages_HTML/works.html">More Details</a>
+            </div>
+        </section>
+        <!-- /#works -->
+
+
+        <section id="blog" class="wrapper">
+            <div class="inner">
+                <h2 class="sec-title">BLOG</h2>
+                <div class="content">
+                    <article class="blog1">
+                        <div class="article-img">
+                            <a href="/blog/article/20220924.html"><img src="blog/img/0924Kuma.jpg" alt="ブログ画像"></a>
+                        </div>
+                        <p class="date">2022.09.24</p>
+                        <p class="small-title">
+                            就職活動始めました。
+                        </p>
+                    </article>
+                    <article class="blog3">
+                        <div class="article-img">
+                            <a href="/blog/article/20220801.html"><img src="blog/img/20220615_1.png" alt="ブログ画像"></a>
+                        </div>
+                        <p class="date">2022.08.01</p>
+                        <p class="small-title">
+                            デジタルデトックス。
+                        </p>
+                    </article>
+                    <article class="blog2">
+                        <div class="article-img">
+                            <a href="/blog/article/20220730.html"><img src="/blog/img/canada1.jpg" alt="カナダ画像"></a>
+                        </div>
+                        <p class="date">2022.07.30</p>
+                        <p class="small-title">
+                            カナダから帰ってきました。
+                        </p>
+                    </article>
+                </div>
+                <a class="detail-btn" href="/pages_HTML/blog.html">More Details</a>
+            </div>
+        </section>
+
+
+        <section id="contact" class="wrapper">
+            <div class="inner">
+                <h2 class="sec-title">CONTACT</h2>
+                <div class="content">
+                    <a class="contact-btn" href="#">お問合せはこちら</a>
+                    <p>当ポートフォリオサイトをご覧いただきありがとうございます。 <br>
+                        ご意見、お問合せを心よりお待ちしています。<br>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="sns">
+            <ul>
+                <li><a href="https://github.com/Minami03harps"><img src="img/githubLogo.png" alt="github-logo"></a></li>
+                <li><a href="https://www.facebook.com/people/%E5%A4%A7%E5%9F%8E%E7%BE%8E%E5%A5%88%E5%AE%9F/100041461067527/"><img src="/img/facebookLogo.png" alt="facebook-log"></a></li>
+                <li><a href="https://vsco.co/333-minami/gallery"><img src="/img/vscoLogo.png" alt="vsco-logo"></a></li>
+            </ul>
+        </div>
+        <div class="copy-light">
+            <small>&copy;2022 Minami Oshiro Portfolio</small>
+        </div>
+    </footer>
+    
+
+    <script src="/JavaScript/main.js"></script>
+    <script src="JavaScript/article.js"></script>
+</body>
+</html>
